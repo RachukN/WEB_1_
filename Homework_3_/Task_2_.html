@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+            body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(245, 245, 245);
+            
+        }
+        li{
+            font-size: large;
+        }
+        .image-marker{
+            list-style-image: url(icons/unchecked_16.png);
+        }
+        li{
+            list-style-position: inside;
+            padding: 10px 40px 10px 40px ;
+        }
+        span{
+            margin: 0 15px 0 15px;
+        }
+
+       li:nth-child(2n+1){
+        background-color: rgb(165, 204, 218);
+        
+       }
+       
+       li:nth-child(2n+2){
+        background-color: rgb(173, 216, 230);
+       }
+       .done{
+        
+        list-style-image: url(icons/checked_16.png);
+        text-decoration: line-through ;
+        background-color:antiquewhite;
+       }
+
+    </style>
+</head>
+
+<body>
+    <h1>My To Do List</h1>
+    <ul class="image-marker">
+        <li>
+            <span>Hit the gym   </span> <img src="icons/cross-mark-emoji.png" >
+        </li>
+        <li class="done" >
+            <span>Pay bills  </span> <img src="icons/cross-mark-emoji.png" >
+        </li>
+        <li>
+            <span>Meet John  </span> <img src="icons/cross-mark-emoji.png" >
+        </li>
+        <li>
+            <span>Buy eggs  </span> <img src="icons/cross-mark-emoji.png" >
+        </li>
+        <li class="done">
+            <span>Read a book  </span> <img src="icons/cross-mark-emoji.png" >
+        </li>
+        <li>
+            <span>Organize office  </span> <img src="icons/cross-mark-emoji.png" >
+        </li>
+        <li>
+            <span>Eat dinner  </span> <img src="icons/cross-mark-emoji.png" >
+        </li>
+        <li>
+            <span>By apples  </span> <img src="icons/cross-mark-emoji.png" >
+        </li>
+        <li>
+            <span>Meet George  </span> <img src="icons/cross-mark-emoji.png" >
+        </li>
+        <li>
+            <span>Feed the cat  </span> <img src="icons/cross-mark-emoji.png" >
+        </li>
+        <li class="done">
+            <span>Write a letter  </span> <img src="icons/cross-mark-emoji.png" >
+        </li>
+        <li>
+            <span>Run 1 km  </span> <img src="icons/cross-mark-emoji.png" >
+        </li>
+    </ul>
+</body>
+</html>
