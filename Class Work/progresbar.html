@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rectangle {
+            border: 10px solid orange;
+            width: 1000px;
+            height: 100px;
+            margin: 50px 100px;
+            overflow: hidden;
+        }
+
+        .squere {
+            background-color: orange;
+            height: 100px;
+            width: 100px;
+            animation: move 2s infinite;
+        }
+        @keyframes move{
+            from{
+                margin-left: -100px;
+            }
+            to{
+                margin-left: 100%;
+            }
+        }
+        img{
+            filter: grayscale(100%);
+            padding: 50px;
+        }
+        img:hover{
+            filter: grayscale(0%);
+            width: 500px;
+            height: 500px;
+            transition: all .5s;
+        }
+    </style>
+</head>
+
+<body>
+<div class="rectangle" > 
+    <div class="squere animation">
+
+    </div>
+</div>
+<img src="icons/favorites.png" alt="favorites" width="100px" height="100px">
+</body>
+
+</html>

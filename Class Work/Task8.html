@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu ul,
+.menu ol {
+    list-style: none;
+}
+
+.menu > ul{
+   display: flex;
+    justify-content: center;
+}
+
+.menu > ul li a {
+    display:block;
+    background: linear-gradient(0,#773607, #e5c265);
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s;
+
+}
+
+.menu > ul li{
+    position: relative;
+
+}
+
+.allign{
+
+    padding: 5px 5px 5px 30px;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid #9a4f19;
+    width: 100px;
+    height: 40px;
+}
+
+.menu li a:hover{
+    background-image:linear-gradient(0, #eadebe, #e5c265, #eadebe );
+    color: #4a2810;
+    transition: all .5s;
+}
+
+/*SUBMENU*/
+
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    left: -40px;
+}
+
+.menu li > ul li a:hover{
+
+    background: #e5b36f;
+}
+
+.menu li > ul li{
+    border-left: 1px solid #9a4f19;
+    border-right: 1px solid #9a4f19;
+}
+
+.menu li > ul li a{
+    padding: 10px;
+    background: #ffdda6;
+    text-transform: none;
+    color: #4a2810;
+}
+
+.border_bottom{
+    border-bottom: 1px solid #9a4f19
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+          <li><a class="allign" href="#">ГЛАВНАЯ</a></li>
+          <li><a class="allign" href="#">ПОДОБРАТЬ ПЕРСОНАЛ</a>
+            <ul>
+              <li><a href="#">О Нас</a></li>
+              <li><a href="#">Задать вопрос</a></li>
+              <li><a href="#">Это интересно</a></li>
+              <li><a class="border_bottom" href="#">Отзывы</a></li>
+            </ul>
+
+          </li>
+          <li><a class="allign" href="#">ЦЕНЫ</a></li>
+        </ul>
+      </nav>
+</body>
+</html>

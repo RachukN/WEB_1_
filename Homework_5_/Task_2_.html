@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("../img/ep_naturalwhite.png");
+            margin-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(245, 245, 245);
+
+        }
+
+        header {
+            margin-top: 50px;
+            font-family: Cuprum, Arial, Helvetica, sans-serif;
+        }
+
+        span {
+            padding: 20px;
+            display: inline-block;
+        }
+
+        .dws-menu * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .dws-menu ul,
+        .dws-menu ol {
+            list-style: none;
+        }
+
+        .dws-menu>ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .dws-menu>ul li {
+            position: relative;
+            border-right: 1px solid #696969;
+        }
+
+        .dws-menu>ul li:first-child {
+            border-left: 1px solid #656565;
+        }
+
+        .dws-menu>ul li:last-child {
+            border-right: 1px solid #747575;
+        }
+
+        .dws-menu>ul li>a i.fa {
+            position: absolute;
+            top: 15px;
+            left: 12px;
+            font-size: 18px;
+        }
+
+        .dws-menu>ul li a {
+            display: block;
+            background: rgb(76, 153, 107);
+            background: -moz-linear-gradient(top, rgb(76, 153, 107) 0%, rgb(86, 172, 120) 2%, rgb(86, 172, 120) 98%, rgb(99, 197, 138) 100%);
+            background: -webkit-linear-gradient(top, rgb(76, 153, 107) 0%, rgb(86, 172, 120) 2%, rgb(86, 172, 120) 98%, rgb(99, 197, 138) 100%);
+            background: linear-gradient(to bottom, rgb(76, 153, 107) 0%, rgb(86, 172, 120) 2%, rgb(86, 172, 120) 98%, rgb(99, 197, 138) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9c9c9', endColorstr='#757577', GradientType=0);
+
+
+            padding: 15px 30px 15px 40px;
+            font-size: 14px;
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .dws-menu li a:hover {
+            background: rgb(56, 90, 64) ;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e1e5', endColorstr='#e0e1e5', GradientType=0);
+
+        }
+
+        /*sub menu*/
+        .dws-menu li ul {
+            position: absolute;
+            min-width: 150px;
+            display: none;
+        }
+
+        .dws-menu li>ul li {
+            border-top: 1px solid #b0b0b0;
+        }
+
+        .dws-menu li>ul li a {
+            padding: 10px;
+            text-transform: none;
+            background: rgb(76, 153, 107);
+        }
+
+        .dws-menu li>ul li ul {
+            position: absolute;
+            right: -150px;
+            top: 0;
+        }
+
+        .dws-menu li:hover>ul {
+            display: block;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <conteiner>
+        <header>
+            <nav class="dws-menu">
+                <ul>
+                    <li><a href="#"><i class="fa fa-home"></i>Главная</a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i>Продукция</a>
+                        <ul>
+                            <li><a href="#">Одежда</a>
+                                <ul>
+                                    <li><a href="#">Обувь</a></li>
+                                    <li><a href="#">Куртки</a></li>
+                                    <li><a href="#">Брюки</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Электроника</a>
+                                <ul>
+                                    <li><a href="#">Камеры</a></li>
+                                    <li><a href="#">Компьютеры</a></li>
+                                    <li><a href="#">Телефоны</a>
+                                        <ul>
+                                            <li><a href="#">Samsung</a></li>
+                                            <li><a href="#">Flf</a></li>
+                                            <li><a href="#">Apple</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Продукты питания</a></li>
+                            <li><a href="#">Инструменты</a></li>
+                            <li><a href="#">Быт. химия</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-cogs"></i>Услуги</a>
+                        <ul>
+                            <li><a href="#">Услуга 1</a></li>
+                            <li><a href="#">Услуга 2</a></li>
+                            <li><a href="#">Услуга 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-th-list"></i>Новости</a></li>
+                    <li><a href="#"><i class="fa fa-envelope-open"></i>Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <span>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ab et quibusdam distinctio error? Quia odit
+            officia natus sit quod quam dolorum soluta nisi corrupti, maiores explicabo animi quisquam suscipit neque!
+            Error, nostrum eius nihil voluptate nam ex repellendus, id totam consequatur fuga ipsum iusto dolores
+            incidunt veniam quisquam, molestias saepe. Error aperiam perferendis incidunt ea nostrum et eligendi
+            mollitia. Ipsum, vel iure adipisci, magni expedita ex, enim numquam libero quaerat porro ipsa. In laborum
+            eligendi at beatae nesciunt. Perferendis, adipisci fuga ipsum enim eum maxime sunt esse quaerat aliquid
+            quod, possimus vitae dolore repellat explicabo. Voluptates laborum maxime inventore praesentium natus.
+            Fugiat debitis deserunt libero laborum quia, iusto eum harum odit. Ex unde nostrum, itaque similique
+            maiores, laudantium rerum cum quasi corporis debitis numquam suscipit nam nesciunt at repellat optio
+            obcaecati nobis praesentium porro earum quis, ab aspernatur. Cupiditate esse doloremque debitis, dolor est,
+            tempora quos vel aliquid itaque ex facere. Aperiam possimus autem fugit quam sunt repellendus nesciunt
+            saepe? Non, quas sit. Accusantium enim reprehenderit doloribus architecto a consectetur nemo eum numquam,
+            commodi nihil recusandae incidunt. Rerum illo ipsa aspernatur? Quod omnis rerum vero vitae labore quasi unde
+            explicabo maiores eum perspiciatis sed suscipit, exercitationem excepturi adipisci pariatur accusantium
+            repellat ullam voluptate, modi vel ab, nesciunt dolore beatae! Totam ex perspiciatis illo dignissimos ullam
+            aspernatur doloribus consequatur itaque impedit error, doloremque, voluptas facere provident? Aperiam, et
+            mollitia. Quo maxime voluptatibus, sed laboriosam et iure possimus nobis, rerum nemo nisi fugit obcaecati
+            facilis non animi accusamus. Aliquid quas magnam ab culpa quasi minima impedit nulla? Ab rem similique
+            maiores rerum molestias nisi recusandae quod aliquid quo quidem tenetur accusantium ullam deserunt omnis et,
+            ipsum assumenda quam molestiae quas voluptatum. Deserunt consequatur quo, culpa commodi sunt saepe ab
+            dolore. Quasi aliquid exercitationem dicta totam laboriosam explicabo repellat illum minus numquam,
+            molestias necessitatibus ipsa obcaecati quas quidem. Neque facere dignissimos delectus rem totam dolores
+            iusto, esse blanditiis enim saepe placeat ratione reiciendis dolorum molestiae nostrum voluptatibus nobis?
+            Esse possimus animi blanditiis laborum amet eum commodi excepturi a. Similique consequatur molestiae ea rem
+            reiciendis quaerat modi ullam veniam aliquid exercitationem soluta vero consequuntur aut rerum, quia
+            cupiditate. Quam ipsam sit dolorum dolores labore autem commodi placeat velit sapiente quisquam nobis,
+            deleniti suscipit, beatae dolore ea iusto vero facere excepturi perspiciatis rem quibusdam dicta
+            consequuntur odit sed. Et est consequatur nostrum facere magnam minus nam! Exercitationem aut numquam illo
+            facere iure asperiores ad? </span>
+    </conteiner>
+</body>
+
+</html>

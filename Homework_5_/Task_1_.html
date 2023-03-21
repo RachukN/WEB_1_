@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task6</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            color: black;
+        }
+
+        table {
+            position: relative;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 13px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgb(219, 219, 219);
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(231, 231, 231);
+        }
+
+        .litegray {
+            background-color: rgb(243, 243, 243);
+        }
+
+        .whitegray {
+            background-color: rgb(231, 231, 231);
+        }
+
+        tfoot th, thead th {
+            background-color: rgb(120, 135, 171);
+
+            text-align: center;
+            padding: 30px 50px;
+            color: rgb(0, 0, 0);
+        }
+        thead th {
+            color: white;
+
+        }
+tfoot th span{
+    border: 1px solid black;
+    padding: 7px 30px;
+    margin: -8px;
+    background-color: rgb(219, 219, 219);
+}
+        td {
+            text-align: center;
+            padding: 30px 50px;
+            width: 16%;
+        }
+
+        thead th:nth-child(1) {
+            background-color: rgb(211,211,211);
+        }
+
+        thead th:nth-child(2) {
+            background-color: rgb(79, 98, 142)
+        }
+
+        thead th:nth-child(3) {
+            background-color: rgb(46, 65, 114)
+        }
+
+        thead th:nth-child(4) {
+            background-color: rgb(22, 41, 85)
+        }
+
+        thead th:nth-child(5) {
+            background-color: rgb(6, 21, 57)
+        }
+        th:nth-child(2n+1){
+            background-color: rgb(219, 219, 219);
+        }
+        th:nth-child(2n){
+            background-color: rgb(231, 231, 231);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+
+        <thead>
+            <th>
+                <h3>Choose your plan</h3>
+            </th>
+            <th>
+                <h3>starter</h3>
+                <div class="bold">$10</div>
+                <div>per month</div>
+            </th>
+            <th>
+                <h3>econom</h3>
+                <div class="bold">$30</div>
+                <div>per month</div>
+            </th>
+            <th>
+                <h3>standart</h3>
+                <div class="bold">$59</div>
+                <div>per month</div>
+            </th>
+            <th>
+                <h3>professional</h3>
+                <div class="bold">$99</div>
+                <div>per month</div>
+            </th>
+
+        </thead>
+        <tfoot>
+            <th></th>
+            <th>
+                <span>start</span>
+            </th>
+            <th>
+                <span>start</span>
+            </th>
+            <th>
+                <span>start</span>
+            </th>
+            <th>
+                <span>start</span>
+            </th>
+
+
+        </tfoot>
+        <tbody>
+            <tr>
+                <td class="first">Amount of space</td>
+                <td class="whitegray"><span>250GB</span></td>
+                <td><span>40GB</span></td>
+                <td class="whitegray"><span>110GB</span></td>
+                <td><span>Unlimeted</span></td>
+            </tr>
+            <tr>
+                <td class="first">Bandwidth per month</td>
+                <td class="litegray"><span>120GB</span></td>
+                <td><span>240GB</span></td>
+                <td class="litegray"><span>610GB</span></td>
+                <td><span>1300GB</span></td>
+            </tr>
+            <tr>
+                <td class="first">Email accounts</td>
+                <td class="whitegray"><span>1</span></td>
+                <td><span>15</span></td>
+                <td class="whitegray"><span>60</span></td>
+                <td><span>Unlimeted</span></td>
+            </tr>
+            <tr>
+                <td class="first">My SQL databases</td>
+                <td class="litegray"><span>1</span></td>
+                <td><span>15</span></td>
+                <td class="litegray"><span>60</span></td>
+                <td><span>Unlimeted</span></td>
+            </tr>
+            <tr>
+                <td class="first">25h support </td>
+                <td class="whitegray"><span>No</span></td>
+                <td><span>Yes</span></td>
+                <td class="whitegray"><span>Yes</span></td>
+                <td><span>Yes</span></td>
+            </tr>
+            <tr>
+                <td class="first">Support tickets per month </td>
+                <td class="litegray"><span>2</span></td>
+                <td><span>6</span></td>
+                <td class="litegray"><span>14</span></td>
+                <td><span>20</span></td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
